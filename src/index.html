@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tweet Optimizer</h1>
+            <p>Optimize your tweets based on Twitter's algorithm</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <textarea id="tweetInput" placeholder="Paste your tweet draft here..."></textarea>
+                <div class="character-count">
+                    <span id="charCount">0</span>/280
+                </div>
+                <button id="analyzeBtn">Analyze Tweet</button>
+            </div>
+            
+            <div class="results-section">
+                <h2>Analysis Results</h2>
+                <div id="results">
+                    <!-- Results will appear here -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Based on analysis of <a href="https://github.com/twitter/the-algorithm" target="_blank">Twitter's public algorithm</a>. This tool has limitations and cannot guarantee improved engagement.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
